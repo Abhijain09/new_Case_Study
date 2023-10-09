@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cart-service
+#  data:
+#    mongodb:
+##      uri: mongodb+srv://test:test@ankitacluster.hzmeu.mongodb.net/test
+#      uri: mongodb://localhost:27017
+#      database: Shopping_Cart
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+server:
+  port: 8093
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+springdoc:
+  swagger-ui:
+    path: /cart-service-swagger.html
+  operationsSorter: method
+
+jwtSecret: secret
+jwtExpiration: 86400

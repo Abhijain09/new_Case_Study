@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: wallet-service
+#  data:
+#    mongodb:
+##      uri: mongodb+srv://abhijain09:<password>@abhijaincluster.kgctatd.mongodb.net/
+#      uri: mongodb://localhost:27017
+#      database: Shopping_Cart
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+server:
+  port: 8095
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+springdoc:
+  swagger-ui:
+    path: /wallet-service-swagger.html
+    operationsSorter: method
